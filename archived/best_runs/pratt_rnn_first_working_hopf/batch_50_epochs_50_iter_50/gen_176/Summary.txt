@@ -1,0 +1,40 @@
+Model: "pratt_rnn"
+____________________________________________________________________________
+ Layer (type)                Output Shape              Param #   Trainable  
+============================================================================
+ input_1 (InputLayer)        [(50, 1, 64)]             0         Y          
+                                                                            
+ cpx_rnn_layer (PrattRNNLaye  (50, 1, 64)              11456     Y          
+ r)                                                                         
+                                                                            
+ dense (Dense)               (50, 1, 32)               2080      Y          
+                                                                            
+ dense_1 (Dense)             (50, 1, 1)                33        Y          
+                                                                            
+============================================================================
+Total params: 13,569
+Trainable params: 10,369
+Non-trainable params: 3,200
+____________________________________________________________________________
+Dataset: Mackeyglass
+Tao: 30
+Delta_x: 10
+Step_size: 1
+Input_size: 64
+Output_size: 1
+Raw_size: 200064
+Batch_size: 50
+Epoch_size: 50
+Num_epochs: 50
+Test_split: 25.0%
+Makedataset: False
+Dtype: <class 'numpy.float32'>
+Shape: 
+  Train Images: (160000, 1, 64)
+  Train Labels: (160000, 1, 1)
+  Test Images: (40000, 1, 64)
+  Test Labels: (40000, 1, 1)
+
+Metrics: 
+Loss: 0.006157123018056154
+Mape: 9.30606746673584
